@@ -1,0 +1,22 @@
+Algoritmo Act2_Lecc16_Inc2
+	Dimensionar numEnte[8]
+	Definir in,numMa, poMa Como Entero
+	
+	Para indice = 1 Hasta 8 Hacer
+		Escribir "ingrese el numero ", indice, ":"	
+		leer numEnte[indice]
+		
+		si indice = 1 Entonces
+			numMa = numEnte[indice]
+			poMa = indice
+		SiNo
+			Si numEnte[indice] > numMa Entonces
+				numMa = numEnte[indice]
+				poMa = indice
+			FinSi
+		FinSi
+	FinPara
+	
+	Escribir "El numero mayor es: ", numMa
+	Escribir "Se encuentra en la posición: ", poMa
+FinAlgoritmo
